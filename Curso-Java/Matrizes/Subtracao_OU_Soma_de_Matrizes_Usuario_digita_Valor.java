@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class Subtracao_de_Matrizes_Usuario_digita_Valor {
+public class Subtracao_OU_Soma_de_Matrizes_Usuario_digita_Valor {
     public static void main(String[] args) {
 
         int linhas = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite a quantidade de linha que as duas matrizes vão ter"));
