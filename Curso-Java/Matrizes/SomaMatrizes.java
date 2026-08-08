@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class Subtracao_OU_Soma_de_Matrizes_Usuario_digita_Valor {
+public class SomaMatrizes {
     public static void main(String[] args) {
 
         int linhas = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite a quantidade de linha que as duas matrizes vão ter"));
@@ -24,26 +24,13 @@ public class Subtracao_OU_Soma_de_Matrizes_Usuario_digita_Valor {
             }
         }
 
-        String decisao = JOptionPane.showInputDialog(null,"Você quer somar ou subtrair essas duas matrizes? (Somar/Subtrair)");
-        String mensagem = "Matriz resultante: \n";
+        String mensagem = "A matriz resultante do soma dessas duas é: \n";
 
         for (int i = 0; i < linhas; i++) {
             for (int j = 0; j < colunas; j++) {
-
-                if (decisao.equalsIgnoreCase("Somar")){
-                    matrizResultante [i] [j] = matrizA[i][j] + matrizB[i][j];
-
-                }else if (decisao.equalsIgnoreCase("Subtrair")){
-                    matrizResultante [i] [j] = matrizA[i][j] - matrizB[i][j];
-
-                } else {
-                    JOptionPane.showMessageDialog(null ,"Opção inválida");
-                    return;
-                }
-
+                matrizResultante[i][j] = matrizA[i][j] + matrizB[i][j];
                 mensagem += matrizResultante[i][j] + " ";
             }
-
             mensagem += "\n";
         }
 
