@@ -24,7 +24,7 @@ public class SomaMatrizes {
             }
         }
 
-        String mensagem = "A matriz resultante do soma dessas duas é: \n";
+        String mensagem = "A matriz resultante do soma dessas duas é: \n ";
 
         for (int i = 0; i < linhas; i++) {
             for (int j = 0; j < colunas; j++) {
