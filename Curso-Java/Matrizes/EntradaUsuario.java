@@ -8,7 +8,7 @@ public class EntradaUsuario {
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
                 matriz[i][j] = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o valor da " +
-                        "linha " +i+ ", coluna " +j));
+                         "linha " +i+ ", coluna " +j));
             }
         }
 
